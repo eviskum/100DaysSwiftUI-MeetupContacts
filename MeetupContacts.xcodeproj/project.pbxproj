@@ -11,6 +11,11 @@
 		903919FA26527AC800BB62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903919F926527AC800BB62AD /* ContentView.swift */; };
 		903919FC26527ACB00BB62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903919FB26527ACB00BB62AD /* Assets.xcassets */; };
 		903919FF26527ACB00BB62AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903919FE26527ACB00BB62AD /* Preview Assets.xcassets */; };
+		90391A0726527B2800BB62AD /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0626527B2800BB62AD /* ContactModel.swift */; };
+		90391A0926528EE500BB62AD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0826528EE500BB62AD /* ImagePicker.swift */; };
+		90391A0B2652927B00BB62AD /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0A2652927B00BB62AD /* ContactDetailsView.swift */; };
+		90391A0D2653C12B00BB62AD /* AddEditContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0C2653C12B00BB62AD /* AddEditContactView.swift */; };
+		90391A0F2653DD4D00BB62AD /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0E2653DD4D00BB62AD /* FileManagerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		903919FB26527ACB00BB62AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903919FE26527ACB00BB62AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90391A0026527ACB00BB62AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90391A0626527B2800BB62AD /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		90391A0826528EE500BB62AD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		90391A0A2652927B00BB62AD /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
+		90391A0C2653C12B00BB62AD /* AddEditContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditContactView.swift; sourceTree = "<group>"; };
+		90391A0E2653DD4D00BB62AD /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				903919F726527AC800BB62AD /* MeetupContactsApp.swift */,
+				90391A0626527B2800BB62AD /* ContactModel.swift */,
+				90391A0E2653DD4D00BB62AD /* FileManagerExtension.swift */,
 				903919F926527AC800BB62AD /* ContentView.swift */,
+				90391A0A2652927B00BB62AD /* ContactDetailsView.swift */,
+				90391A0C2653C12B00BB62AD /* AddEditContactView.swift */,
+				90391A0826528EE500BB62AD /* ImagePicker.swift */,
 				903919FB26527ACB00BB62AD /* Assets.xcassets */,
 				90391A0026527ACB00BB62AD /* Info.plist */,
 				903919FD26527ACB00BB62AD /* Preview Content */,
@@ -139,7 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				903919FA26527AC800BB62AD /* ContentView.swift in Sources */,
+				90391A0D2653C12B00BB62AD /* AddEditContactView.swift in Sources */,
+				90391A0F2653DD4D00BB62AD /* FileManagerExtension.swift in Sources */,
+				90391A0B2652927B00BB62AD /* ContactDetailsView.swift in Sources */,
+				90391A0926528EE500BB62AD /* ImagePicker.swift in Sources */,
 				903919F826527AC800BB62AD /* MeetupContactsApp.swift in Sources */,
+				90391A0726527B2800BB62AD /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

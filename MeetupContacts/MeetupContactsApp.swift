@@ -12,6 +12,8 @@ struct MeetupContactsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(readFromDisk())
+//                .environmentObject(Contacts())
         }
     }
 }
