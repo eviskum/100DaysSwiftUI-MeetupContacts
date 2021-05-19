@@ -46,5 +46,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow access to store the meetup location</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow access to camera to take pictures of contacts</string>
 </dict>
 </plist>

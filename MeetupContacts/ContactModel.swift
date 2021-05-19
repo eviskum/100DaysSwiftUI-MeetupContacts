@@ -7,19 +7,21 @@
 
 import Foundation
 import SwiftUI
+import MapKit
 
 class Contact: ObservableObject, Codable, Comparable {
     
     var contactID: UUID?
     @Published var contactName: String?
     @Published var contactPhoto: UIImage?
+    @Published var contactLocation: CodableMKPointAnnotation?
     
     var wrappedContactName: String {
         contactName ?? ""
     }
     
     enum CodingKeys: CodingKey {
-        case contactID, contactName, contactPhoto
+        case contactID, contactName, contactPhoto, contactLocation
     }
     
     func encode(to encoder: Encoder) throws {
@@ -28,14 +30,22 @@ class Contact: ObservableObject, Codable, Comparable {
         try container.encode(contactID, forKey: .contactID)
         try container.encode(contactName, forKey: .contactName)
         try container.encode(convertImageToBase64(contactPhoto!), forKey: .contactPhoto)
+        try container.encode(contactLocation, forKey: .contactLocation)
     }
 
     init() {}
     
-    init(contactName: String, contactPhoto: UIImage) {
+    init(contactName: String, contactPhoto: UIImage, contactLocation: CLLocationCoordinate2D?) {
         self.contactID = UUID()
         self.contactName = contactName
         self.contactPhoto = contactPhoto
+        if contactLocation != nil {
+            let newLocation = CodableMKPointAnnotation()
+            newLocation.coordinate = contactLocation!
+            newLocation.title = "Our Meetup point"
+            newLocation.subtitle = "."
+            self.contactLocation = newLocation
+        }
     }
     
     required init(from decoder: Decoder) throws {
@@ -45,6 +55,7 @@ class Contact: ObservableObject, Codable, Comparable {
         contactName = try container.decode(String.self, forKey: .contactName)
         let contactPhotoBase64 = try container.decode(String.self, forKey: .contactPhoto)
         self.contactPhoto = convertBase64ToImage(contactPhotoBase64)
+        contactLocation = try? container.decode(CodableMKPointAnnotation.self, forKey: .contactLocation)
     }
     
     func convertImageToBase64(_ image: UIImage) -> String {

@@ -16,6 +16,10 @@
 		90391A0B2652927B00BB62AD /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0A2652927B00BB62AD /* ContactDetailsView.swift */; };
 		90391A0D2653C12B00BB62AD /* AddEditContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0C2653C12B00BB62AD /* AddEditContactView.swift */; };
 		90391A0F2653DD4D00BB62AD /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A0E2653DD4D00BB62AD /* FileManagerExtension.swift */; };
+		90391A1126550F6200BB62AD /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A1026550F6200BB62AD /* MKPointAnnotation-ObservableObject.swift */; };
+		90391A1326550FA900BB62AD /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A1226550FA900BB62AD /* MKPointAnnotation-Codable.swift */; };
+		90391A1526550FFD00BB62AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A1426550FFD00BB62AD /* MapView.swift */; };
+		90391A172655104A00BB62AD /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90391A162655104A00BB62AD /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		90391A0A2652927B00BB62AD /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		90391A0C2653C12B00BB62AD /* AddEditContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditContactView.swift; sourceTree = "<group>"; };
 		90391A0E2653DD4D00BB62AD /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
+		90391A1026550F6200BB62AD /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		90391A1226550FA900BB62AD /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
+		90391A1426550FFD00BB62AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		90391A162655104A00BB62AD /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 		903919EB26527AC800BB62AD = {
 			isa = PBXGroup;
 			children = (
+				90391A1426550FFD00BB62AD /* MapView.swift */,
 				903919F626527AC800BB62AD /* MeetupContacts */,
 				903919F526527AC800BB62AD /* Products */,
 			);
@@ -66,6 +75,9 @@
 				90391A0626527B2800BB62AD /* ContactModel.swift */,
 				90391A0E2653DD4D00BB62AD /* FileManagerExtension.swift */,
 				903919F926527AC800BB62AD /* ContentView.swift */,
+				90391A1226550FA900BB62AD /* MKPointAnnotation-Codable.swift */,
+				90391A162655104A00BB62AD /* LocationFetcher.swift */,
+				90391A1026550F6200BB62AD /* MKPointAnnotation-ObservableObject.swift */,
 				90391A0A2652927B00BB62AD /* ContactDetailsView.swift */,
 				90391A0C2653C12B00BB62AD /* AddEditContactView.swift */,
 				90391A0826528EE500BB62AD /* ImagePicker.swift */,
@@ -155,9 +167,13 @@
 			files = (
 				903919FA26527AC800BB62AD /* ContentView.swift in Sources */,
 				90391A0D2653C12B00BB62AD /* AddEditContactView.swift in Sources */,
+				90391A1126550F6200BB62AD /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				90391A0F2653DD4D00BB62AD /* FileManagerExtension.swift in Sources */,
+				90391A172655104A00BB62AD /* LocationFetcher.swift in Sources */,
 				90391A0B2652927B00BB62AD /* ContactDetailsView.swift in Sources */,
 				90391A0926528EE500BB62AD /* ImagePicker.swift in Sources */,
+				90391A1326550FA900BB62AD /* MKPointAnnotation-Codable.swift in Sources */,
+				90391A1526550FFD00BB62AD /* MapView.swift in Sources */,
 				903919F826527AC800BB62AD /* MeetupContactsApp.swift in Sources */,
 				90391A0726527B2800BB62AD /* ContactModel.swift in Sources */,
 			);
